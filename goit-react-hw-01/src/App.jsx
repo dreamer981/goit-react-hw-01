@@ -4,7 +4,7 @@ import userData from "./userData.json";
 
 const App = () => {
   return (
-    <div>
+    <div className="prof-box">
       <Profile
         name={userData.username}
         tag={userData.tag}
