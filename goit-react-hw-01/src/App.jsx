@@ -1,10 +1,11 @@
-import './App.css'
 import Profile from "./components/Profile";
+import FriendList from "./components/FriendList";
+import friends from "./friends.json";
 import userData from "./userData.json";
 
 const App = () => {
   return (
-    <div className="prof-box">
+    <>
       <Profile
         name={userData.username}
         tag={userData.tag}
@@ -12,7 +13,8 @@ const App = () => {
         image={userData.avatar}
         stats={userData.stats}
       />
-    </div>
+      <FriendList friends={friends} />
+    </>
   );
 };
 
