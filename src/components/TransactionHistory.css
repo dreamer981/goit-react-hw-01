@@ -18,6 +18,9 @@ table {
     font-weight: bold;
   }
   
+  tr {
+    background-color: white;  }
+    
   tr:nth-child(even) {
     background-color: #b5b5b5;
   }
